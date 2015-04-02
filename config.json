@@ -1,0 +1,30 @@
+{
+    "*": {
+        "db": {
+            "name": "my_database_name"
+        },
+        "routing": {
+            "static": {
+                "host": "//static.shopista.eu",
+                ":js/cms":       "js/cms.js",
+                ":js/autosize":  "vendor/js/jquery.autosize-min.js",
+                ":js/jquery":    "vendor/js/jquery-2.1.1.min.js",
+                ":js/jquery/ui": "vendor/js/jquery-ui-1.11.2.custom.min.js"
+            }
+        }
+    },
+    "*.local": {
+        "dev": true,
+        "db": {
+            "name": "my_development_database_name",
+            "user": "my_development_username"
+        },
+        "routing": {
+            "static": {
+                "host": "//static.shopista.local",
+                ":foo/js/jquery":    "vendor/js/jquery-1.10.2.min.js",
+                ":foo/js/jquery/ui": "vendor/js/jquery-ui-git.js"
+            }
+        }
+    }
+}
