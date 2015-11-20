@@ -1,7 +1,7 @@
 <?php
 
 if (!function_exists('config')) {
-    function config($a)
+    function config($a = [])
     {
         return Lemmon\config($a);
     }

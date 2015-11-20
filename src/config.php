@@ -2,10 +2,10 @@
 
 namespace Lemmon;
 
-function config($o = NULL)
+function config($o = [])
 {
     static $config;
-    if (!isset($config) or isset($o)) {
+    if (!isset($config) or !empty($o)) {
         $json = json_decode(file_get_contents(@$o['file'] ?: 'config.json'), TRUE);
         if (json_last_error()) {
             throw new \Exception(sprintf('JSON: %s', json_last_error_msg()));

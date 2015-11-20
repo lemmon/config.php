@@ -1,6 +1,6 @@
 {
     "name": "lemmon/config",
-    "description": "Simple multi-hosts configuration library",
+    "description": "Simple function for accessing host-dependent configuration data stored in a JSON file",
     "license": "MIT",
     "authors": [
         {
